@@ -1,0 +1,32 @@
+insert-m Diagnose0 
+insert-m Diagnose1 
+insert-m Diagnose2 
+insert-m Diagnose3 
+insert-m Diagnose4 
+insert-s 0 1 One
+insert-s 1 2 Two
+insert-s 1 3 Three
+insert-s 2 4 One
+insert-s 2 5 Two
+insert-s 2 6 Three
+insert-s 3 7 Two
+insert-s 3 8 One
+insert-s 4 9 Three
+ut-all
+
+count-s 3
+count-m
+
+del-m 3
+del-s 2 2
+ut-all
+
+
+insert-m Diagnose6 Diagnose6_descr
+insert-s 5 11 One
+ut-all
+
+
+update-m 5 Diagnose6_new Diagnose6_new_descr
+update-s 5 0 15 Two
+ut-all
